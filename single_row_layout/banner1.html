@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单列布局</title>
+	<style type="text/css">
+	h1 {
+		text-align: center;
+		color:#f399c6;
+		font-family: "\5B8B\4F53";
+		text-shadow: 1px 2px #b1aeac;
+	}
+	/*单列布局，通栏去bug*/
+    body {
+      min-width: 900px;
+    }
+    .layout {
+      width:900px;
+      margin:0 auto;
+      background-color: #ccc;
+    }
+    #header {
+      height:60px;
+      background-color:red;
+    }
+    #content {
+      background-color:blue;
+      height:100px;
+    }
+    #footer {
+      background-color:yellow;
+      height:60px;
+    }
+
+    </style>
+</head>
+<body>
+<h1>单列布局，通栏去bug</h1>
+
+	<div id="header">
+	    header
+		<div class="layout">头部.layout</div>
+	</div>
+    <div id="content" class="layout">内容.layout</div>
+    <div id="footer">
+    	footer
+    	<div class="layout">脚部.layout</div>
+	</div>
+	<p>给 body 设置min-width=layout.width 去掉滚动背景色 bug</p>
+</body>
+</html>
