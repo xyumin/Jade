@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单列布局</title>
+<script type="text/javascript" src="../Js/index.js"></script>
+	<style type="text/css">
+	h1 {
+		text-align: center;
+		color:#f399c6;
+		font-family: "\5B8B\4F53";
+		text-shadow: 1px 2px #b1aeac;
+	}
+	/*单列布局，通栏*/
+    .layout {
+      width:900px;
+      margin:0 auto;
+      background-color: #ccc;
+    }
+    #header {
+      height:60px;
+      background-color:red;
+    }
+    #content {
+      background-color:blue;
+      height:100px;
+    }
+    #footer {
+      background-color:yellow;
+      height:60px;
+    }
+    /*按钮*/
+  	.btn {
+    border:none;
+    background-color: rgba(179,122,245,0.5);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: "\5B8B\4F53";
+    font-size: 18px;
+	}
+    .center {
+    margin-top: 10px;
+    text-align: center;
+
+    }
+    </style>
+</head>
+<body>
+<h1>单列布局，通栏</h1>
+
+	<div id="header">
+	    header
+		<div class="layout">头部.layout</div>
+	</div>
+    <div id="content" class="layout">内容.layout</div>
+    <div id="footer">
+    	footer
+    	<div class="layout">脚部.layout</div>
+	</div>
+	<p>layout定宽，而header和footer的宽度是和浏览器宽度一样，随着屏幕宽度变小，header和footer的背景色宽度也变小，小于layout的宽度时，layout多出来的部分出现无背景颜色</p>
+<div class="center">
+	<input type="button" class="btn" onclick="btn4()" value="通栏去bug">
+</div>
+</body>
+</html>
