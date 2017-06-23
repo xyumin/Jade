@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单列布局</title>
+	<script type="text/javascript" src="../Js/index.js"></script>
+	<style type="text/css">
+	h1 {
+		text-align: center;
+		color:#f399c6;
+		font-family: "\5B8B\4F53";
+		text-shadow: 1px 2px #b1aeac;
+	}
+	/*单列布局，max-width*/
+    .layout {
+      max-width:900px;
+      margin:0 auto;
+      background-color: #ccc;
+    }
+    #header {
+      height:60px;
+      background-color:red;
+    }
+    #content {
+      background-color:blue;
+      height:100px;
+    }
+    #footer {
+      background-color:yellow;
+      height:60px;
+    }
+    /*按钮*/
+  	.btn {
+    border:none;
+    background-color: rgba(179,122,245,0.5);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: "\5B8B\4F53";
+    font-size: 18px;
+	}
+    .center {
+    margin-top: 10px;
+    text-align: center;
+
+    }
+    </style>
+</head>
+<body>
+<h1>单列布局，max-width</h1>
+<div class="layout">
+	<div id="header">头部header</div>
+    <div id="content">内容content</div>
+    <div id="footer">脚部footer</div>
+</div>
+<div class="center">
+	<input type="button" class="btn" onclick="btn3()" value="通栏">
+</div>
+</body>
+</html>
