@@ -2,7 +2,9 @@
 function btn1(){
 	window.location.href="single_row_layout/single_row_layout.html";
 }
-
+function btn11(){
+	window.location.href="css_knowledge/css_selector.html";
+}
 
 
 
