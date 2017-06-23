@@ -1,0 +1,8 @@
+.btn {
+    border:none;
+    background-color: rgba(179,122,245,0.5);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: "\5B8B\4F53";
+    font-size: 18px;
+}
