@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>双列布局</title>
+	<style type="text/css">
+	h1 {
+		text-align: center;
+		color:#f399c6;
+		font-family: "\5B8B\4F53";
+		text-shadow: 1px 2px #b1aeac;
+	}
+	#contain:after{
+		content:"";
+		clear: both;
+		display: block;
+	}
+	#left {
+		float: left;
+		width:200px;
+		height:200px;
+		background-color: red;
+	}
+	#right {
+		height:100px;
+		background-color: pink;
+		margin-left: 210px;
+	}
+	#footer {
+		background-color: yellow;
+	}
+	p {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	/*按钮*/
+	a {
+		text-decoration:none;
+	}
+	.btn {
+    background-color: #1212fd;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: "\5B8B\4F53";
+    font-size: 18px;
+    color:#fff;
+    display: inline-block;
+    margin-right: 50px;
+	}
+	.center {
+    margin-top: 100px;
+    text-align: center;
+
+    }
+	</style>
+</head>
+<body>
+	<h1>左侧固定宽度，右侧自适应宽度</h1>
+	<div id="contain">
+		<div id="left">左侧浮动，固定宽度</div>
+		<div id="right">右侧设置margin-left，自适应宽度</div>
+	</div>
+	<div id="footer">footer</div>
+	<p><span style="color: red">注意清除浮动</span>,没有清除浮动会出现以下情况：</p>
+	<div>
+		<div id="left">左侧浮动，固定宽度</div>
+		<div id="right">右侧设置margin-left，自适应宽度</div>
+	</div>
+	<div id="footer">footer</div>
+	<div class="center">
+		<a href="right_fixed.html" class="btn">右侧固定宽度，左侧自适应宽度</a>
+		<a href="../index.html" class="btn">返回首页</a>
+		
+	</div>
+</body>
+</html>
