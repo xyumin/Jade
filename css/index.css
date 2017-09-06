@@ -98,20 +98,7 @@ a {
   background-color: rgba(0,0,0,.5);  
   text-align: center;
 }
-.menu_mask {
-  position: absolute;
-  top:0;
-  right:0;
-  bottom: 0;
-  left:0;
-  background-color: rgba(0,0,0,.8);
-  width:100%;
-  overflow: hidden;
-}
-.menu_mask ul {
-  position: absolute;
-  top:0;
-  right:0;
+
 /*首页展示*/ 
 .home {
   padding-top: 200px; 
